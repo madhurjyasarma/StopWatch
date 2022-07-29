@@ -76,3 +76,20 @@ body {
 .btn span {
     font-size: 35px;
 }
+
+#startBtn:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+
+#pauseBtn:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+
+#resetBtn:hover{
+    border: 1px solid white;
+    color: black;
+}
