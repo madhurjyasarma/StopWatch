@@ -1,12 +1,62 @@
-let startBtn = document.getElementById('startBtn');
-let pauseBtn = document.getElementById('pauseBtn');
-let resetBtn = document.getElementById('resetBtn');
-let displayText = document.getElementById('displayText');
+// let startBtn = document.getElementById('startBtn');
+// let pauseBtn = document.getElementById('pauseBtn');
+// let resetBtn = document.getElementById('resetBtn');
+// let displayText = document.getElementById('displayText');
+
+ 
+var seconds = 00; 
+var tens = 00; 
+var appendTens = document.getElementById("tens")
+var appendSeconds = document.getElementById("seconds")
+var buttonStart = document.getElementById('startBtn');
+var buttonStop = document.getElementById('pauseBtn');
+var buttonReset = document.getElementById('resetBtn');
+var Interval ;
+
+buttonStart.onclick = function() {
+  
+  clearInterval(Interval);
+   Interval = setInterval(startTimer, 10);
+}
+
+  buttonStop.onclick = function() {
+     clearInterval(Interval);
+}
 
 
-startBtn.addEventListener('click', () => {
-    setInterval(startBtn, ()=>{
-        displayText.innerHTML = Date.now() % 12;
-    })
-})
+buttonReset.onclick = function() {
+   clearInterval(Interval);
+  tens = "00";
+    seconds = "00";
+  appendTens.innerHTML = tens;
+    appendSeconds.innerHTML = seconds;
+}
+
+ 
+
+function startTimer () {
+  tens++; 
+  
+  if(tens <= 9){
+    appendTens.innerHTML = "0" + tens;
+  }
+  
+  if (tens > 9){
+    appendTens.innerHTML = tens;
+    
+  } 
+  
+  if (tens > 99) {
+    console.log("seconds");
+    seconds++;
+    appendSeconds.innerHTML = "0" + seconds;
+    tens = 0;
+    appendTens.innerHTML = "0" + 0;
+  }
+  
+  if (seconds > 9){
+    appendSeconds.innerHTML = seconds;
+  }
+
+}
 
