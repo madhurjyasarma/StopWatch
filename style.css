@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap');
+
+
+body {
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+    background-image:url('./assets/coolHue-FFF6B7-F6416C.png');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#displayText {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 75px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    padding: 25px 25px;
+    text-align: center;
+}
+
+.btn{
+    
+    display: flex;
+    border-radius: 14px;
+    border: none;
+    color: black;
+    align-items: start;
+    justify-content: center;
+    padding: 15px 32px;
+    margin-right: 15px;
+    font-size:20px;
+    font-weight: bold;
+    
+}
+
+
+#startBtn {
+    cursor: pointer;   
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    
+}
+
+#pauseBtn {
+    cursor: pointer;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+#resetBtn {
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+    cursor: pointer;
+}
+
+.container {
+    padding: 10px;
+    font-weight: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 3rem 3rem;
+    border-radius: 10px;
+}
+
+#header {
+    /* background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);     */
+    color: black;
+    font-family: 'Cormorant SC', serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 3rem;
+    border: none;
+    border-color: black;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.btn span {
+    font-size: 35px;
+}
